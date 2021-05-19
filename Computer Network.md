@@ -111,8 +111,6 @@
 
 ##### 第三次握手中，如果客户端的ACK未送达服务器，会怎样？
 
-<details>
-<summary>展开</summary>
 可能会：由于Server没有收到ACK确认，因此会重发之前的SYN+ACK（默认重发五次，之后自动关闭连接），Client收到后会重新传ACK给Server。
 
 
