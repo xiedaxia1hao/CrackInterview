@@ -113,10 +113,7 @@
 
 <details>
 <summary>展开</summary>
-**可能会：**由于Server没有收到ACK确认，因此会重发之前的SYN+ACK（默认重发五次，之后自动关闭连接），Client收到后会重新传ACK给Server。
-
-
-**可能会**：过一段时间后服务器会以RST(reset, because this is an unexpected TCP package)包响应，握手结束。防止SYN洪泛攻击。
+可能会：由于Server没有收到ACK确认，因此会重发之前的SYN+ACK（默认重发五次，之后自动关闭连接），Client收到后会重新传ACK给Server。
 
 
 
